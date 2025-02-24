@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+:root {
+    --cor-principal: black;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22cafd;
+}
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+.apresentacao {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.titulo {
+    font-size: 2.25rem;
+    font-family: "Krona One", serif;
+}
+
+.conteudo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}  
+
+p {
+    font-size: 1.5rem;
+    font-family: "Montserrat", serif ;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    
+} 
+
+header {
+    text-align: center;
+    padding: 2% 0% 0% 10%;
+}
+
+nav {
+    display: flex;
+    gap: 80px
+}
+
+.link-cabecalho {
+    color: #22cafd;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+.link-cabecalho:hover {
+    color: #007bff;
+}
+
+body   { 
+    box-sizing: border-box;
+    
+
+    width: 100%;
+    background-color: var(--cor-principal);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.titulo-destaque {
+    color:#22cafd;
+}
+
+h1 {
+    color: #f6f6f6;
+}
+h2 { 
+    color: #f6f6f6;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border: solid 2px #22cafd;
+    border-radius: 10px;
+    width: 60%;
+    height: 10%;
+    text-align: center;
+    box-sizing: border-box;
+
+    
+    
+}
+button:hover {
+    background:#22cafd45 ;
+}
+
+.social-medias  {
+    display: flex;
+    justify-content: center;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    font-family: "Montserrat" sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f6f6f6;
+    gap: 16px;
+}
+
+
+footer { 
+    text-align: center;
+    background-color: #22cafd;
+    color: rgb(0, 0, 0);
+    padding: 1.33rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.gojo-image {
+width: 40%;
+
+border: solid snow 2px;
+padding: 8px;
+border-radius: 3px;
+}
+@media (max-width:1100px) {
+    header { 
+        padding: 10%;
+        
+    }
+    nav {
+        justify-content: center;
+        gap: 450px;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 8%;
+        
+    
+    }
+    .conteudo {
+        width:auto;
+    }
+}
