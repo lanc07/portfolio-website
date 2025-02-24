@@ -72,7 +72,7 @@ body   {
 }
 
 .titulo-destaque {
-    color:#22cafd;
+    color:var(--cor-terciaria);
 }
 
 h1 {
@@ -125,8 +125,8 @@ button:hover {
 
 footer { 
     text-align: center;
-    background-color: #22cafd;
-    color: rgb(0, 0, 0);
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
     padding: 12px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
