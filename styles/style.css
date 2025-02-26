@@ -18,6 +18,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 82px;
+
+    
 }
 
 .titulo {
@@ -29,7 +31,7 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
 }  
 
 p {
@@ -37,7 +39,6 @@ p {
     font-family: "Montserrat", serif ;
     font-weight: 400;
     color: var(--cor-secundaria);
-    
 } 
 
 header {
@@ -47,7 +48,7 @@ header {
 
 nav {
     display: flex;
-    gap: 80px
+    gap: 80px;
 }
 
 .link-cabecalho {
@@ -64,11 +65,12 @@ nav {
 
 body   { 
     box-sizing: border-box;
-    
-
     width: 100%;
+    height: 100vh;
     background-color: var(--cor-principal);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo-destaque {
@@ -101,10 +103,9 @@ button {
     width: 60%;
     height: 10%;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    padding: 21.5px 0px;
 
-    
-    
 }
 button:hover {
     background:#22cafd45 ;
@@ -113,7 +114,6 @@ button:hover {
 .social-medias  {
     display: flex;
     justify-content: center;
-    padding: 21.5px 0px;
     text-decoration: none;
     font-family: "Montserrat" sans-serif;
     font-size: 1.5rem;
@@ -146,17 +146,27 @@ border-radius: 3px;
         
     }
     nav {
+        max-width: 100vw;
+        align-items: center;
+        box-sizing: border-box;
         justify-content: center;
-        gap: 450px;
+        gap: 250px;
     }
     
     .apresentacao {
+        max-width: 100vw;
         flex-direction: column-reverse;
         padding: 8%;
-        
+        overflow: auto;
     
     }
+
+    button {
+        padding: 21.5px 0px;
+    }
+
     .conteudo {
         width:auto;
+        height: auto;
     }
 }
