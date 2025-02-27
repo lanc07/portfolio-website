@@ -5,7 +5,7 @@
 :root {
     --cor-principal: black;
     --cor-secundaria: #f6f6f6;
-    --cor-terciaria: #22cafd;
+    --cor-terciaria: #fd2222;
 }
 * { 
     margin: 0px;
@@ -52,7 +52,7 @@ nav {
 }
 
 .link-cabecalho {
-    color: #22cafd;
+    color: var(--cor-terciaria);
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 1.125rem;
@@ -60,7 +60,7 @@ nav {
 }
 
 .link-cabecalho:hover {
-    color: #007bff;
+    color: #007bffe4;
 }
 
 body   { 
@@ -74,14 +74,14 @@ body   {
 }
 
 .titulo-destaque {
-    color:#22cafd;
+    color:var(--cor-terciaria);
 }
 
 h1 {
-    color: #f6f6f6;
+    color: var(--cor-secundaria);
 }
 h2 { 
-    color: #f6f6f6;
+    color: var(--cor-secundaria);
     font-family: "Krona One", sans-serif;
     font-size: 1.5rem;
 
@@ -98,7 +98,7 @@ button {
     align-items: center;
     justify-content: center;
     background-color: #000000;
-    border: solid 2px #22cafd;
+    border: solid 2px var(--cor-terciaria);
     border-radius: 10px;
     width: 60%;
     height: auto;
@@ -108,7 +108,8 @@ button {
 
 }
 button:hover {
-    background:#22cafd45 ;
+    
+    background:#007bff4a ;
 }
 
 .social-medias  {
@@ -118,15 +119,14 @@ button:hover {
     font-family: "Montserrat" sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #f6f6f6;
+    color: var(--cor-secundaria);
     gap: 16px;
-   
 }
 
 
 footer { 
     text-align: center;
-    background-color: #22cafd;
+    background-color: var(--cor-terciaria);
     color: rgb(0, 0, 0);
     padding: 12px;
     font-family: "Montserrat", sans-serif;
@@ -134,13 +134,13 @@ footer {
     font-size: 1.125rem;
 }
 
-.gojo-image {
+.spider-image {
 width: 40%;
-border: solid snow 2px;
+border: solid var(--cor-terciaria) 2px;
 padding: 8px;
 border-radius: 3px;
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1100px) {
     header { 
         padding: 10%;
 
@@ -177,12 +177,15 @@ border-radius: 3px;
         height: auto;
 
     }
-    
-    
-    }
+
     .conteudo {
         width:auto;
 
     }
+
+    body {
+        min-height: auto;
+    }
+}
 
 
